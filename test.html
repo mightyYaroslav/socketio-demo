@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+
+</head>
+
+<body>
+<div id="sse">
+    <a href="javascript:SocketIoTest()">Run WebSocket</a>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+  function SocketIoTest() {
+    var socket = io()
+    socket.emit('chat message', 'Hello World')
+    alert('Socket IO message sent!')
+  }
+</script>
+</body>
+</html>
